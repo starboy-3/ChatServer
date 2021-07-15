@@ -143,5 +143,9 @@ $ py manage.py runserver
 # when server is running
 $ cd ~
 $ cd ChatServer/
+$ pipenv install -r requirements.txt
+$ py manage.py makemigrations
+$ py manage.py makemigrations api
+$ py manage.py migrate
 $ py manage.py test tests
 ```
