@@ -128,24 +128,24 @@ curl --header "Content-Type: application/json" \
 
 ## Deploy
 ```bash
-$ git clone https://github.com/starboy-3/ChatServer.git
-$ cd ChatServer/
-$ pipenv install -r requirements.txt
-$ py manage.py makemigrations
-$ py manage.py makemigrations api
-$ py manage.py migrate
-$ py manage.py runserver
+git clone https://github.com/starboy-3/ChatServer.git
+cd ChatServer/
+pipenv install -r requirements.txt
+py manage.py makemigrations
+py manage.py makemigrations api
+py manage.py migrate
+py manage.py runserver
 ```
 
 ## Testing
 
 ```bash
 # when server is running
-$ cd ~
-$ cd ChatServer/
-$ pipenv install -r requirements.txt
-$ py manage.py makemigrations
-$ py manage.py makemigrations api
-$ py manage.py migrate
-$ py manage.py test tests
+cd ~
+cd ChatServer/
+pipenv install -r requirements.txt
+py manage.py makemigrations
+py manage.py makemigrations api
+py manage.py migrate
+py manage.py test tests
 ```
